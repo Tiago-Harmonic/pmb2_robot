@@ -29,14 +29,14 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://pmb2_description/meshes/sensors/bumper.stl"/>
+          <mesh filename="file://$(find pmb2_description)/meshes/sensors/bumper.stl"/>
         </geometry>
         <material name="DarkGrey"/>
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://pmb2_description/meshes/sensors/bumper_collision.stl"/>
+          <mesh filename="file://$(find pmb2_description)/meshes/sensors/bumper_collision.stl"/>
         </geometry>
         <material name="DarkGrey"/>
       </collision>

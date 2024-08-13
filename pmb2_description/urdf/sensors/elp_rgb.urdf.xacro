@@ -38,7 +38,7 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 90 0"/>
         <geometry>
-          <mesh filename="package://pmb2_description/meshes/sensors/elp_camera.stl" scale="0.001 0.001 0.001"/>
+          <mesh filename="file://$(find pmb2_description)/meshes/sensors/elp_camera.stl" scale="0.001 0.001 0.001"/>
         </geometry>
         <material name="Grey" />
       </visual>

@@ -38,7 +38,7 @@
             <stddev>0.007</stddev>
           </noise>
         </camera>
-        <plugin name="${name}_frame_controller" filename="libgazebo_ros_camera.so">
+        <!-- <plugin name="${name}_frame_controller" filename="libgazebo_ros_camera.so">
           <alwaysOn>true</alwaysOn>
           <updateRate>0.0</updateRate>
           <cameraName>${name}</cameraName>
@@ -50,9 +50,8 @@
           <distortionK3>0.0</distortionK3>
           <distortionT1>0.0</distortionT1>
           <distortionT2>0.0</distortionT2>
-        </plugin>
+        </plugin> -->
       </sensor>
     </gazebo>
   </xacro:macro>
 </robot>
-

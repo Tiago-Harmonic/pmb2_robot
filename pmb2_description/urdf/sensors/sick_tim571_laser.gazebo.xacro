@@ -18,10 +18,10 @@
 
   <xacro:macro name="sick_tim571_laser_gazebo" params="name ros_topic update_rate min_angle max_angle">
     <gazebo reference="${name}_link">
-      <sensor type="lidar" name="${name}">
-        <pose>0 0 0 0 0 0</pose>
+      <sensor type="gpu_lidar" name="sick_tim571">
         <update_rate>${update_rate}</update_rate>
         <visualize>true</visualize>
+        <always_on>true</always_on>
         <topic>${ros_topic}</topic>
         <gz_frame_id>${name}_link</gz_frame_id>
         <lidar>
@@ -46,7 +46,6 @@
           </noise>
         </lidar>
       </sensor>
-      <material>Gazebo/DarkGrey</material>
     </gazebo>
   </xacro:macro>
 

@@ -20,14 +20,13 @@
 
   <xacro:macro name="sick_tim571_laser" params="name parent *origin ros_topic update_rate min_angle max_angle">
 
-    <link name="${name}_link" type="laser">
+    <link name="${name}_link">
       <inertial>
         <origin xyz="-0.02559000000 -0.00056000000 -0.05732000000" rpy="0 0 0"/>
         <mass value="0.28922000000"/>
         <inertia ixx="0.00002628919" ixy="0.00000024298" ixz="-0.00000368129" iyy="0.00003374542" iyz="-0.00000001330" izz="0.00005832599"/>
       </inertial>
       <visual>
-        <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
           <mesh filename="file://$(find pmb2_description)/meshes/sensors/sick_tim551.stl"/>
         </geometry>

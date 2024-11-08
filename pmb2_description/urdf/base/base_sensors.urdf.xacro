@@ -18,7 +18,7 @@
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
 
   <!-- PROPERTIES -->
-  <xacro:property name="base_laser_x" value="0.202"/>
+  <xacro:property name="base_laser_x" value="0.252"/>
   <xacro:property name="base_laser_y" value="0.0"/>
   <xacro:property name="base_laser_z" value="-0.004"/>
 
